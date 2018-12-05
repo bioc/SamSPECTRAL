@@ -1,7 +1,7 @@
 Package: SamSPECTRAL
 Type: Package
 Title: Identifies cell population in flow cytometry data.
-Version: 1.35.2
+Version: 1.35.4
 Date: 2018-05-31
 Author: Habil Zare and Parisa Shooshtari
 Maintainer: Habil <zare@u.washington.edu>
@@ -22,4 +22,4 @@ Description: Samples large data such that spectral clustering is
 License: GPL (>= 2)
 LazyLoad: yes
 biocViews: FlowCytometry, CellBiology, Clustering, Cancer,
-        FlowCytometry, StemCells, HIV
+        FlowCytometry, StemCells, HIV, ImmunoOncology
