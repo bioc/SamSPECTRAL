@@ -2,7 +2,7 @@ check.SamSPECTRAL.input <- function(data.points,dimensions=1:ncol(data.points),r
     ## Input checking. data.points should be a matrix, without NA and Inf.
     result <- list()
     infinite <- FALSE
-    if( class(data.points)!="matrix" ){  ##Check if there are enough number of points, stored in the data.matrix.
+    if(!inherits(data.points, "matrix")){  ##Check if there are enough number of points, stored in the data.matrix.
         stop("BAD input for SamSPECTRAL!, maybe it is not a matrix.")
     }## else, the input class is good.    
 

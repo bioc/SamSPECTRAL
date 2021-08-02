@@ -1,3 +1,8 @@
 exportPattern("^[[:alpha:]]+")
 useDynLib(SamSPECTRAL)
+
+## Imports:
 import(methods)
+importFrom("grDevices", "dev.off", "png")
+importFrom("graphics", "abline", "axis", "par", "title")
+importFrom("stats", "coef", "coefficients", "kmeans", "lm")

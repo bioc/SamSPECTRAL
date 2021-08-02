@@ -98,10 +98,10 @@ Connecting <- function(full, society, conductance, number.of.clusters, labels.fo
         ## If input matrix is 2*1 then it will not be  of class "matrix".
         ## Because the last row just keeps the indices, 
         ## it means there is only one node that can not be concatinated more.
-        if(class(input.graph.matrix) != "matrix"){ 	
+        if(!inherits(input.graph.matrix, "matrix")){ 	
             result <- list (input.graph.matrix, components.list)
             return(result)	
-        }##End if(class(input.graph.matrix) != "matrix").
+        }
         
         output.graph.matrix <- input.graph.matrix
         ## We would like to devide the label of outgoing edges from a node 
@@ -162,7 +162,7 @@ Connecting <- function(full, society, conductance, number.of.clusters, labels.fo
     
     concat <- function(input.graph.matrix){
     	## input check
-    	if(class(input.graph.matrix) != "matrix"){	
+    	if(!inherits(input.graph.matrix, "matrix")){	
             ## If input matrix is 2*1 then it will not be  of class "matrix".
             ## Because the last row just keeps the indices, 
             ## it means there is only one node that can not be concatinated more.
